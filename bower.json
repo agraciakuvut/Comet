@@ -1,18 +1,18 @@
 {
-  name: "kuvutcomet",
-  homepage: "https://github.com/agraciakuvut/Comet",
-  description: "Simple jquery comet implementation",
-  main: [
+  "name": "kuvutcomet",
+  "homepage": "https://github.com/agraciakuvut/Comet",
+  "description": "Simple jquery comet implementation",
+  "main": [
     "comet.js"
   ],
-  keywords: [
+  "keywords": [
     "comet"
   ],
-  authors: [
+  "authors": [
     "agracia"
   ],
-  dependencies: {
-    jquery: ">=1.7"
+  "dependencies": {
+    "jquery": ">=1.7"
   },
-  license: "MIT"
+  "license": "MIT"
 }
