@@ -1,6 +1,6 @@
 {
   name: "kuvutcomet",
-  homepage: "https://github.com/agracia/comet",
+  homepage: "https://github.com/agraciakuvut/Comet",
   description: "Simple jquery comet implementation",
   main: [
     "comet.js"
