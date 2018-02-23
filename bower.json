@@ -1,0 +1,18 @@
+{
+  name: "agraciacomet",
+  homepage: "https://github.com/agracia/comet",
+  description: "Simple jquery comet implementation",
+  main: [
+    "comet.js"
+  ],
+  keywords: [
+    "comet"
+  ],
+  authors: [
+    "agracia"
+  ],
+  dependencies: {
+    jquery: ">=1.7"
+  },
+  license: "MIT"
+}

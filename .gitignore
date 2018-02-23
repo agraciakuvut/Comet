@@ -1,0 +1,7 @@
+.idea/
+.idea/vcs.xml
+*.php
+*.coffee
+*.txt
+*.html
+prototype.js
