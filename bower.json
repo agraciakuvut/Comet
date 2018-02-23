@@ -1,5 +1,5 @@
 {
-  name: "agraciacomet",
+  name: "kuvutcomet",
   homepage: "https://github.com/agracia/comet",
   description: "Simple jquery comet implementation",
   main: [
