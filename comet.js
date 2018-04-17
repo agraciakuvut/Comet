@@ -7,12 +7,13 @@ Comet = (function() {
         this.url = options.url;
         this.onMessage = options.onMessage;
         this.params = options.params;
+        this.method = options.method ? options.method : 'get';
     }
 
     Comet.prototype.connect = function() {
         this.stop = false;
         return this.ajax = $.ajax({
-            method: 'get',
+            method: this.method,
             url: this.url,
             data: this.params,
             type: 'json',
@@ -52,7 +53,7 @@ Comet = (function() {
         if (!this.stop) {
             return $.ajax({
                 url: this.url,
-                method: 'get',
+                method: this.method,
                 data: params
             });
         }
