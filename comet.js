@@ -6,6 +6,7 @@ Comet = (function() {
         this.noerror = true;
         this.url = options.url;
         this.onMessage = options.onMessage;
+        this.onError = options.onError ? options.onError : null;
         this.params = options.params;
         this.method = options.method ? options.method : 'get';
     }
@@ -17,6 +18,14 @@ Comet = (function() {
             url: this.url,
             data: this.params,
             type: 'json',
+            error: (function(_this) {
+                return function(data, status) {
+                    _this.disconnect();
+                    if (_this.onError) {
+                        return _this.onError(data);
+                    }
+                };
+            })(this),
             success: (function(_this) {
                 return function(data, status) {
                     var e;
